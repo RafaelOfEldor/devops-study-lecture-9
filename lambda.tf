@@ -1,9 +1,3 @@
-# Prefix variable
-variable "prefix" {
-  type        = string
-  description = "Prefix for all resource names"
-}
-
 # IAM Role for Lambda Execution
 resource "aws_iam_role" "lambda_exec_role" {
   assume_role_policy = jsonencode({
